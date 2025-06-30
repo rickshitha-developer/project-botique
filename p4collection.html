@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rickshi Boutique - Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yesteryear|Niconne|Eagle+Lake|Akaya+Kanadaka" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Akaya Kanadaka', sans-serif;
+            background: linear-gradient(to right, #ffe6f0, #ffe6ff);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #ff66a3;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            font-family: 'Niconne', cursive;
+        }
+        nav {
+            background-color: #ff3385;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffe4e1;
+        }
+        .container-fluid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .sidebar {
+            flex: 1;
+            max-width: 250px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .collection {
+            flex: 3;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .item {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px pink;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff99cc;
+        }
+        .item h3 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        .item p {
+            font-size: 16px;
+            color: #666;
+            text-decoration: line-through;
+        }
+        .item .discount {
+            font-size: 18px;
+            color: #28a745;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #ff3385;
+            text-align: center;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Rickshi Boutique
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Rickshi Boutique</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ms-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4collection.html">Collection</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4tryon.html">Try On</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4order.html">Order</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4reviews.html">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="sidebar">
+        <h5>Filters</h5>
+        <form>
+            <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-select" id="category">
+                    <option selected>All</option>
+                    <option value="1">Dresses</option>
+                    <option value="2">Jackets</option>
+                    <option value="3">Shoes</option>
+                    <option value="4">Bags</option>
+                    <option value="5">Sarees</option>
+                    <option value="6">Kids</option>
+                    <option value="7">Shirts</option>
+                    <option value="8">Jeans</option>
+                    <option value="9">Sneakers</option>
+                    <option value="10">Scarves</option>
+                    <option value="11">Blouses</option>
+                    <option value="12">Chudithars</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="priceRange" class="form-label">Price Range</label>
+                <input type="range" class="form-range" id="priceRange" min="0" max="10000" step="500">
+                <div class="d-flex justify-content-between">
+                    <span>₹0</span>
+                    <span>₹10,000</span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Apply Filters</button>
+        </form>
+    </div>
+
+    <div class="collection">
+        <div class="item position-relative">
+            <span class="badge bg-success">20% OFF</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIqvsSJUGWB7DhEWbq6TqM8KwzzlZwChMKmA&s" alt="Elegant Dress">
+            <h3>Elegant Pink Dress</h3>
+            <p>₹4,199</p>
+            <div class="discount">₹3,299</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">15% OFF</span>
+            <img src="https://i.pinimg.com/736x/0f/4d/72/0f4d72a44fd3dd4b105192135fa29639.jpg" alt="Stylish Jacket">
+            <h3>Stylish Denim Jacket</h3>
+            <p>₹2,999</p>
+            <div class="discount">₹2,499</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">10% OFF</span>
+            <img src="https://img.veaul.com/catalog/product/1/_/1_2275.jpg" alt="Fashion Shoes">
+            <h3>Luxury Heels</h3>
+            <p>₹5,099</p>
+            <div class="discount">₹4,599</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">15% OFF</span>
+            <img src="https://sc04.alicdn.com/kf/Hd2b23d2d4de1426fbaa85dc85e9cde78d.jpg" alt="Designer Bag">
+            <h3>Designer Handbag</h3>
+            <p>₹6,299</p>
+            <div class="discount">₹5,299</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">20% OFF</span>
+            <img src="https://assets0.mirraw.com/images/9996699/MAH_SUR_68_zoom.jpg?1645591183" alt="Traditional Saree">
+            <h3>Elegant Silk Saree</h3>
+            <p>₹9,999</p>
+            <div class="discount">₹7,999</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">10% OFF</span>
+            <img src="https://images.meesho.com/images/products/425261037/ncs46_512.webp" alt="Kids Dress">
+            <h3>Kids Cute Frock</h3>
+            <p>₹2,099</p>
+            <div class="discount">₹1,899</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">12% OFF</span>
+            <img src="https://m.media-amazon.com/images/I/71w3W-go9KL._AC_UY1100_.jpg" alt="Women's Shirt">
+            <h3>Formal Women's Shirt</h3>
+            <p>₹2,499</p>
+            <div class="discount">₹2,199</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">10% OFF</span>
+            <img src="https://images.meesho.com/images/products/48446749/oemss_512.webp" alt="Stylish Jeans">
+            <h3>Trendy Blue Jeans</h3>
+            <p>₹3,199</p>
+            <div class="discount">₹2,899</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">12% OFF</span>
+            <img src="https://uspoloassn.in/cdn/shop/products/1_f4ce120b-fb6f-44a1-a8a9-17adb419f3a1.jpg" alt="Sneakers">
+            <h3>Unisex Sneakers</h3>
+            <p>₹3,999</p>
+            <div class="discount">₹3,499</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">15% OFF</span>
+            <img src="https://world.benetton.com/dw/image/v2/BBSF_PRD/on/demandware.static/-/Sites-ucb-master/default/dw4a4f0b46/images/Full_PDP_h/01_24A_105CDU00W_62K_FS.jpg?sw=768&sh=1024" alt="Scarf">
+            <h3>Colorful Scarf</h3>
+            <p>₹999</p>
+            <div class="discount">₹799</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">20% OFF</span>
+            <img src="https://dressupandblossom.in/wp-content/uploads/2024/11/picsart_24-11-02_11-55-28-525.jpg?w=720" alt="Aari Work Blouse">
+            <h3>Aari Work Blouse</h3>
+            <p>₹4,799</p>
+            <div class="discount">₹3,899</div>
+        </div>
+
+        <div class="item position-relative">
+            <span class="badge bg-success">15% OFF</span>
+            <img src="https://images.cbazaar.com/images/Kritika-Kamra-Magenta-Georgette-Churidar-SLSCC186122421-u.jpg" alt="Chudithar">
+            <h3>Chudithar</h3>
+            <p>₹2,499</p>
+            <div class="discount">₹2,099</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Rickshi Boutique | Style Delivered
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+ 

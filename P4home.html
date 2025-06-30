@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rickshi Boutique - Home</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear|Niconne|Eagle+Lake|Akaya+Kanadaka" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: Akaya Kanadaka;
+      background: linear-gradient(to right, #f8e1f4, #ffe4e1);
+    }
+
+    header {
+      background-color: #ff66a3;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      font-family: Niconne;
+    }
+
+    nav {
+            background-color: #ff3385;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffe4e1;
+        }
+    .shop-now {
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .shop-now:hover {
+      background-color: #e60073;
+    }
+
+    footer {
+      background-color: #ff3385;
+      text-align: center;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+  
+  .carousel-inner img {
+    width: 100%;
+    max-height: 400px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    Rickshi Boutique
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Rickshi Boutique</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ms-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4collection.html">Collection</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4tryon.html">Try On</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4order.html">Order</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4reviews.html">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <div class="bg-dark text-white py-5" style="background-image: url('https://imgmediagumlet.lbb.in/media/2019/02/5c77aca8c26f9150c4458000_1551346856039.jpg'); background-size: cover; background-position: center;">
+    <div class="container text-center py-5">
+      <h1 class="display-3 fw-bold">Discover the Boutique Experience</h1>
+      <p class="lead">Chic. Classy. Confident. Shop with elegance.</p>
+      <a href="p4collection.html" class="btn btn-outline-light btn-lg mt-3">Explore Collection</a>
+    </div>
+  </div>
+
+  <!-- Welcome -->
+  <section class="container text-center my-5">
+    <h1 class="display-5 fw-bold">Welcome to Rickshi Boutique!</h1>
+    <p class="lead">Where Fashion Meets Elegance. Discover the newest trends and timeless classics at Rickshi Boutique. Style your dreams with us!</p>
+  </section>
+
+  <!-- Our Story Carousel -->
+  <div id="storyCarousel" class="carousel slide container mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner rounded shadow">
+      <div class="carousel-item active p-5 bg-light text-center">
+        <h2>Our Story</h2>
+        <p>Founded with love and a passion for fashion, Rickshi Boutique brings you handpicked collections from around the world.</p>
+      </div>
+      <div class="carousel-item p-5 bg-light text-center">
+        <h2>Empowering Fashion</h2>
+        <p>Every piece tells a story — a story of grace, beauty, and empowerment. Step into a world of style and confidence.</p>
+      </div>
+      <div class="carousel-item p-5 bg-light text-center">
+        <h2>Achievements</h2>
+        <p>Awarded Best Boutique 2024. Trusted by over 10,000 happy customers worldwide!</p>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#storyCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#storyCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Try-On Modal Teaser -->
+  <div class="text-center my-5">
+    <h2 class="mb-4">Try Before You Buy</h2>
+    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#tryOnModal">Try-On Now</button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="tryOnModal" tabindex="-1" aria-labelledby="tryOnModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tryOnModalLabel">Virtual Try-On</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Our Try-On tool lets you preview your look in real-time. Launch the full version from the Try-On page!</p>
+          <img src="https://content.jdmagicbox.com/comp/vadodara/t1/0265px265.x265.180705130804.e7t1/catalogue/gurwani-s-clothing-co-alkapuri-vadodara-boutiques-for-kids-251h111pqx.jpg" class="img-fluid rounded">
+        </div>
+        <div class="modal-footer">
+          <a href="p4tryon.html" class="btn btn-success">Go to Try-On</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Visual -->
+ 
+<div class="container my-5">
+  <h2 class="text-center mb-4">🌟 Featured Collection Preview</h2>
+  <div id="productVisualCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active">
+        <img src="https://wp-admin.firstlook.fashion/wp-content/uploads/2024/06/perniaspopupstore.jpg?impolicy=resize&r_width=800&r_height=533&fit=800,533&impolicy=resize&r_width=1&w=1" class="img-fluid" alt="Product 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://thearchitectsdiary.com/wp-content/uploads/2022/12/SHAPE-MY-SPACE-1-2.jpeg" class="img-fluid" alt="Product 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://lh3.googleusercontent.com/d39ON8ykaTyOrf3wEad-E9nDQu-4mbGuVou8BMvTAlER1w9lQQhgJUVys0S9GD9lP-0DsjWScDdCiNxY6zWilnrutHc=w1200-rw" class="img-fluid" alt="Product 3">
+      </div>
+      <div class="carousel-item">
+        <img src="https://content.jdmagicbox.com/comp/vadodara/t1/0265px265.x265.180705130804.e7t1/catalogue/gurwani-s-clothing-co-alkapuri-vadodara-boutiques-for-kids-251h111pqx.jpg" class="img-fluid" alt="Product 4">
+      </div>
+    </div>
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#productVisualCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productVisualCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+
+  <!-- CTA Button -->
+  <div class="text-center mb-5">
+    <a href="p4collection.html" class="shop-now btn btn-lg">Shop Now</a>
+  </div>
+
+  <!-- Why Choose Us -->
+  <section class="container my-5 text-center">
+    <h3 class="mb-4">✨ Why Choose Us?</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Unique Styles</h5>
+            <p class="card-text">Hand-selected pieces that express elegance and individuality like no other.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Try-On Feature</h5>
+            <p class="card-text">Try before you buy with our virtual mirror to find the perfect fit and style.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Customer Love</h5>
+            <p class="card-text">Loved by fashionistas worldwide. Check out our glowing reviews!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">What Our Customers Say 💬</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center p-5 bg-light rounded">
+          <blockquote class="blockquote">
+            <p>"Absolutely stunning collection! I feel so confident in every outfit."</p>
+            <p class="text-success">Aarohi S.</p>
+          </blockquote>
+        </div>
+        <div class="carousel-item text-center p-5 bg-light rounded">
+          <blockquote class="blockquote">
+            <p>"Rickshi is my go-to for elegant and classy fashion. Quality is top-notch!"</p>
+            <p class="text-success">Meera J.</p>
+          </blockquote>
+        </div>
+        <div class="carousel-item text-center p-5 bg-light rounded">
+          <blockquote class="blockquote">
+            <p>"The virtual try-on is genius! Saved me a return and helped me pick the right dress."</p>
+            <p class="text-success">Sana P.</p>
+          </blockquote>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Newsletter Signup -->
+  <div class="container my-5 text-center">
+    <h3 class="mb-3">💌 Join Our Style Circle</h3>
+    <p>Sign up for exclusive deals, new arrivals & fashion inspiration.</p>
+    <form class="row justify-content-center">
+      <div class="col-md-6 col-sm-10 mb-2">
+        <input type="email" class="form-control form-control-lg" placeholder="Enter your email" />
+      </div>
+      <div class="col-md-auto">
+        <button class="btn btn-primary btn-lg">Subscribe</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Rickshi Boutique | Designed with love
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

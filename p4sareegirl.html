@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rickshi Boutique – Try-On Room</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #fff0f5, #fde2e2);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      font-weight: bold;
+      color: #8b005d;
+      text-shadow: 2px 2px white;
+      animation: glow 2s infinite alternate;
+      margin-top: 40px;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 2px 2px 5px #ff66a3; }
+      100% { text-shadow: 2px 2px 20px #ff3399; }
+    }
+
+    .mirror-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .mirror {
+      width: 220px;
+      height: 320px;
+      border: 10px solid gold;
+      border-radius: 50%;
+      background-color: #fff8dc;
+      box-shadow: 0 0 20px gold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      animation: sparkle 8s infinite ease-in-out, sway 4s infinite alternate;
+      margin-bottom: 10px;
+    }
+
+    .mirror img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      animation: sway 4s infinite alternate;
+    }
+
+    .label {
+      font-weight: bold;
+      font-size: 18px;
+      color: #444;
+      text-align: center;
+    }
+
+    @keyframes sparkle {
+      0% { box-shadow: 0 0 15px gold; }
+      50% { box-shadow: 0 0 30px gold, 0 0 10px #fff; }
+      100% { box-shadow: 0 0 15px gold; }
+    }
+
+    @keyframes sway {
+      0% { transform: translateY(0px) rotate(-1deg); }
+      100% { transform: translateY(15px) rotate(1deg); }
+    }
+
+    .btn-style {
+      background-color: #b30059;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 25px;
+      font-size: 16px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn-style:hover {
+      background-color: #99004d;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Heading -->
+<h1>Rickshi Boutique – Try-On Room</h1>
+
+<!-- Try-On Section -->
+<div class="container mt-5">
+  <div class="row justify-content-center g-5">
+    <!-- Before -->
+    <div class="col-md-4 mirror-wrapper">
+      <div class="mirror">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZMuEGa7-neonWWYSGepMsjzg6Q8s2FT7h1w&s" alt="Before Look">
+      </div>
+      <div class="label">Before</div>
+    </div>
+
+    <!-- After -->
+    <div class="col-md-4 mirror-wrapper">
+      <div class="mirror">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHfpY8hEUay0g8lwzLoYd8zZh3dgwlOMKSQw&s" alt="After Look">
+      </div>
+      <div class="label">After</div>
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div class="text-center mt-4">
+    <a href="/" class="btn btn-style">Back to Boutique</a>
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

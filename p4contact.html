@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rickshi Boutique - Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yesteryear|Niconne|Eagle+Lake|Akaya+Kanadaka">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+       body {
+            margin: 0;
+            font-family: 'Akaya Kanadaka', sans-serif;
+            background: linear-gradient(to right, #ffe6f0, #ffe6ff);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #ff66a3;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            font-family: 'Niconne', cursive;
+        }
+        nav {
+            background-color: #ff3385;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffe4e1;
+        }
+        .container-fluid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px #ffa3c2;
+            animation: floatForm 2s infinite alternate ease-in-out;
+        }
+        .contact-form h2 {
+            text-align: center;
+            color: #ff1a75;
+            margin-bottom: 20px;
+            font-family: 'Yesteryear', cursive;
+            animation: fadeIn 2s ease-in-out;
+        }
+        footer {
+            background-color: #ff1a75;
+            text-align: center;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+       
+        @keyframes floatForm {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(30px); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Rickshi Boutique
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Rickshi Boutique</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ms-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4collection.html">Collection</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4tryon.html">Try On</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4order.html">Order</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4reviews.html">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="p4contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="contact-form">
+    <h2>Contact Us</h2>
+    <form method="post" action="/submit_contact">
+        <label for="name" class="form-label fw-bold">Full Name:</label>
+        <input type="text" id="name" name="name" class="form-control mb-3" required>
+
+        <label for="email" class="form-label fw-bold">Email Address:</label>
+        <input type="email" id="email" name="email" class="form-control mb-3" required>
+
+        <label for="phone" class="form-label fw-bold">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="form-control mb-3" required>
+
+        <label for="msg" class="form-label fw-bold">Your Message:</label>
+        <textarea id="msg" name="msg" rows="5" class="form-control mb-4" required></textarea>
+
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>
+</div>
+
+<!-- Added Privacy Policy & Terms -->
+<div class="container mb-5">
+    <div class="bg-white p-4 rounded shadow-sm" style="max-width: 600px; margin: 0 auto;">
+        <h4 class="text-center mb-3" style="color:#ff1a75; font-family:'Yesteryear', cursive;">Privacy & Policy</h4>
+        <p>Your privacy is important to us. We do not share your information with third parties without your consent. All data submitted via this form is securely handled and only used to respond to your inquiries.</p>
+        <h4 class="text-center mt-4 mb-3" style="color:#ff1a75; font-family:'Yesteryear', cursive;">Terms & Conditions</h4>
+        <p>By submitting this form, you agree to our terms and conditions. Please read our policies carefully before using our services.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Rickshi Boutique | Designed with Love
+</footer>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</body>
+</html>
